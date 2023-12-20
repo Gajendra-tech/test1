@@ -1,0 +1,16 @@
+import tkinter as tk
+from tkinter import *
+root=tk.Tk()
+root.title('My Form')
+root.geometry('300x200')
+l1=Label(root, text='GUI Using Python',font='sans 16 bold',bg='green',fg='Yellow').pack(fill='both')
+#Radiobuttton -Single Selection
+v=IntVar()
+r1=Radiobutton(root,variable=v,value=1,text='Male'),pack()                                                                                    
+r1=Radiobutton(root,variable=v,value=1,text='Female'),pack()
+#Checkbutton- Multiple Selection
+c1=Checkbutton(root, text='Music').pack()                                                                                        
+c1=Checkbutton(root, text='Movies').pack()                                                                                        
+c1=Checkbutton(root, text='Sports').pack()                                                                                        
+root.mainloop()
+
